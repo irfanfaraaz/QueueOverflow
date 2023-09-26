@@ -6,7 +6,7 @@ import Image from "next/image";
 import { SignedIn, UserButton } from "@clerk/nextjs";
 import Theme from "./Theme";
 import MobileNav from "./MobileNav";
-import GlobalSearch from "./search/GlobalSearch";
+import GlobalSearch from "../search/GlobalSearch";
 
 const Navbar = () => {
     return (
@@ -19,7 +19,7 @@ const Navbar = () => {
                     alt="QueueOverflow"
                 />
                 <p className="h2-bold font-spaceGrotesk text-dark-100 dark:text-light-900 max-sm:hidden">
-                    Queue <span className="text-primary-500">Overflow</span>
+                    Queue<span className="text-primary-500">Overflow</span>
                 </p>
             </Link>
             <GlobalSearch />
