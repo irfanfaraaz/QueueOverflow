@@ -21,11 +21,11 @@ const hotQuestions = [
 ];
 
 const popularTags = [
-    { _id: 1, title: "React", totalQuestions: 11 },
-    { _id: 2, title: "Next.js", totalQuestions: 10 },
-    { _id: 3, title: "TypeScript", totalQuestions: 9 },
-    { _id: 4, title: "JavaScript", totalQuestions: 8 },
-    { _id: 5, title: "React Native", totalQuestions: 7 },
+    { _id: "1", title: "React", totalQuestions: 11 },
+    { _id: "2", title: "Next.js", totalQuestions: 10 },
+    { _id: "3", title: "TypeScript", totalQuestions: 9 },
+    { _id: "4", title: "JavaScript", totalQuestions: 8 },
+    { _id: "5", title: "React Native", totalQuestions: 7 },
 ];
 const RightSidebar = () => {
     return (
