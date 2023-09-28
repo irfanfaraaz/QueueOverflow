@@ -9,14 +9,14 @@ import Link from "next/link";
 
 const questions = [
     {
-        _id: 1,
+        _id: "1",
         title: "How to use React Query?",
         tags: [
-            { _id: 1, title: "React", totalQuestions: 11 },
-            { _id: 2, title: "Next.js", totalQuestions: 10 },
+            { _id: "1", title: "React", totalQuestions: 11 },
+            { _id: "2", title: "Next.js", totalQuestions: 10 },
         ],
         author: {
-            _id: 1,
+            _id: "1",
             name: "John Doe",
             image: "/assets/images/profile.jpg",
         },
@@ -26,14 +26,14 @@ const questions = [
         createdAt: new Date("2021-09-01T12:00:00.000Z"),
     },
     {
-        _id: 2,
+        _id: "2",
         title: "Best practices for data fetching in a Next.js application with Server-Side Rendering (SSR)?",
         tags: [
-            { _id: 1, title: "React" },
-            { _id: 2, title: "Next.js" },
+            { _id: "1", title: "React" },
+            { _id: "2", title: "Next.js" },
         ],
         author: {
-            _id: 2,
+            _id: "2",
             name: "John Doe 2",
             image: "/assets/images/profile.jpg",
         },
@@ -43,14 +43,14 @@ const questions = [
         createdAt: new Date("2021-08-01T12:00:00.000Z"),
     },
     {
-        _id: 3,
+        _id: "3",
         title: "How to use   Query?",
         tags: [
-            { _id: 1, title: "T", totalQuestions: 11 },
-            { _id: 2, title: "Next.js", totalQuestions: 10 },
+            { _id: "1", title: "T", totalQuestions: 11 },
+            { _id: "2", title: "Next.js", totalQuestions: 10 },
         ],
         author: {
-            _id: 3,
+            _id: "3",
             name: "John Doe 3",
             image: "/assets/images/profile.jpg",
         },
