@@ -5,62 +5,13 @@ import NoResult from "@/components/shared/NoResult";
 import LocalSearchBar from "@/components/shared/search/LocalSearchBar";
 import { Button } from "@/components/ui/button";
 import { HomePageFilters } from "@/constants/filters";
+import { getQuestions } from "@/lib/actions/question.action";
 import Link from "next/link";
 
-const questions = [
-    {
-        _id: "1",
-        title: "How to use React Query?",
-        tags: [
-            { _id: "1", title: "React", totalQuestions: 11 },
-            { _id: "2", title: "Next.js", totalQuestions: 10 },
-        ],
-        author: {
-            _id: "1",
-            name: "John Doe",
-            image: "/assets/images/profile.jpg",
-        },
-        upvotes: 10,
-        views: 100,
-        answers: [],
-        createdAt: new Date("2021-09-01T12:00:00.000Z"),
-    },
-    {
-        _id: "2",
-        title: "Best practices for data fetching in a Next.js application with Server-Side Rendering (SSR)?",
-        tags: [
-            { _id: "1", title: "React" },
-            { _id: "2", title: "Next.js" },
-        ],
-        author: {
-            _id: "2",
-            name: "John Doe 2",
-            image: "/assets/images/profile.jpg",
-        },
-        upvotes: 1,
-        views: 150,
-        answers: [],
-        createdAt: new Date("2021-08-01T12:00:00.000Z"),
-    },
-    {
-        _id: "3",
-        title: "How to use   Query?",
-        tags: [
-            { _id: "1", title: "T", totalQuestions: 11 },
-            { _id: "2", title: "Next.js", totalQuestions: 10 },
-        ],
-        author: {
-            _id: "3",
-            name: "John Doe 3",
-            image: "/assets/images/profile.jpg",
-        },
-        upvotes: 0,
-        views: 120,
-        answers: [],
-        createdAt: new Date("2023-07-01T12:00:00.000Z"),
-    },
-];
-export default function Home() {
+export default async function Home() {
+    const result = await getQuestions({});
+    console.log(result.questions);
+
     return (
         <>
             <div className="flex w-full flex-col-reverse justify-between gap-4 sm:flex-row sm:items-center">
@@ -90,8 +41,8 @@ export default function Home() {
             </div>
             <HomeFilters />
             <div className="mt-10 flex w-full flex-col gap-6">
-                {questions.length > 0 ? (
-                    questions.map((question) => (
+                {result.questions.length > 0 ? (
+                    result.questions.map((question) => (
                         <QuestionCard
                             key={question._id}
                             _id={question._id}
