@@ -45,11 +45,13 @@ export function formatDate(createdAt: Date) {
     return formattedDate;
 }
 
-export function formatNumber(number: number) {
+export function formatNumber(number: number): string {
     if (number >= 1000000) {
-        return (number / 1000000).toFixed(1) + "M";
+        const formattedNum = (number / 1000000).toFixed(1);
+        return `${formattedNum}M`;
     } else if (number >= 1000) {
-        return (number / 1000).toFixed(1) + "K";
+        const formattedNum = (number / 1000).toFixed(1);
+        return `${formattedNum}K`;
     } else {
         return number.toString();
     }
