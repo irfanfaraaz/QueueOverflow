@@ -3,7 +3,7 @@ import React from "react";
 import { Badge } from "@/components/ui/badge";
 
 interface Props {
-    _id: number;
+    _id: string;
     title: string;
     totalQuestions: number;
     showCount: boolean;
@@ -11,7 +11,7 @@ interface Props {
 const RenderTag = ({ _id, title, totalQuestions, showCount }: Props) => {
     return (
         <Link href={`/tags/${_id}`} className="flex justify-between gap-2">
-            <Badge className="subtle-medium background-light800_dark300 text-light400_light500 rounded-md border-none px-4 py-2 uppercase">
+            <Badge className="subtle-medium text-light400_light500 rounded-md border-none bg-gray-200 px-4 py-2 uppercase dark:bg-dark-300">
                 {title}
             </Badge>
 
