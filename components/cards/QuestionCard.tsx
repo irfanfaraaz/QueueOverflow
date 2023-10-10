@@ -9,7 +9,7 @@ interface Props {
     title: string;
     tags: {
         _id: string;
-        title: string;
+        name: string;
     }[];
     author: {
         _id: string;
@@ -49,7 +49,7 @@ const QuestionCard = ({
             </div>
             <div className="mt-3.5 flex flex-wrap gap-2">
                 {tags.map((tag) => (
-                    <RenderTag key={tag._id} _id={tag._id} title={tag.title} />
+                    <RenderTag key={tag._id} _id={tag._id} title={tag.name} />
                 ))}
             </div>
             <div className="flex-between mt-16 w-full flex-wrap gap-3">
