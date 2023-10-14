@@ -16,7 +16,6 @@ export const connectToDatabase = async () => {
             dbName: "QueueOverflow",
         });
         isConnected = true;
-        console.log("=> database connection established");
     } catch (e) {
         console.log("=> database connection failed");
         console.log(e);
