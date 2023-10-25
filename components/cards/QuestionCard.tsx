@@ -33,7 +33,7 @@ const QuestionCard = ({
     createdAt,
 }: Props) => {
     return (
-        <div className="card-wrapper  rounded-[10] border border-slate-300 py-9 shadow dark:border-none sm:px-11">
+        <div className="card-wrapper  rounded-[10] border  py-9 shadow dark:border-none sm:px-11">
             <div className="flex flex-col-reverse items-start justify-between gap-5 sm:flex-row">
                 <div>
                     <span className="subtle-regular text-dark400_light700 line-clamp-1 flex sm:hidden">
