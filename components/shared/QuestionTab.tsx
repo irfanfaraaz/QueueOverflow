@@ -4,6 +4,7 @@ import React from "react";
 import QuestionCard from "../cards/QuestionCard";
 
 interface Props extends SearchParamsProps {
+    searchProps: SearchParamsProps;
     userId: string;
     clerkId?: string | null;
 }
