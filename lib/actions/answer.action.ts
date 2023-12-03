@@ -6,7 +6,6 @@ import {
     AnswerVoteParams,
     CreateAnswerParams,
     DeleteAnswerParams,
-    GetAnswerByIdParams,
     GetAnswersParams,
 } from "./shared.types";
 import { revalidatePath } from "next/cache";
